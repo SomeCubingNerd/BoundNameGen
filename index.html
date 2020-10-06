@@ -16,13 +16,13 @@
     <hr>
     <h2>Your new bound name is: 
 
-    <?php
+    <script>
 
-$boundFirstName = "";
-$boundLastName = "";
+boundFirstName = "";
+boundLastName = "";
 
 #region First Names
-$firstNames = array(
+firstNames = array(
     "Bound",
     "Babbon",
     "Boundo",
@@ -50,7 +50,7 @@ $firstNames = array(
 #endregion
 
 #region Last Names
-$lastNames = array(
+lastNames = array(
     "(Bee)",
     "(Mood)",
     "(mud jr)",
@@ -70,16 +70,16 @@ $lastNames = array(
 );
 #endregion
 
-$boundFirstNameIndex = array_rand($firstNames);
-$boundLastNameIndex = array_rand($lastNames);
+boundFirstNameIndex = array_rand(firstNames);
+boundLastNameIndex = array_rand(lastNames);
 
-$boundFirstName = $firstNames[$boundFirstNameIndex];
-$boundLastName = $lastNames[$boundLastNameIndex];
+boundFirstName = firstNames[boundFirstNameIndex];
+boundLastName = lastNames[boundLastNameIndex];
 
-$boundName = $boundFirstName . " " . $boundLastName; 
-echo $boundName;
+boundName = boundFirstName . " " . $boundLastName; 
+echo boundName;
 
-?>
+</script>
 
     </h2>
 
